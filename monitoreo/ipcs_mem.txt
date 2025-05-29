@@ -1,0 +1,5 @@
+
+------ Shared Memory Segments --------
+key        shmid      owner      perms      bytes      nattch     status      
+0x000004d2 1          lucas      666        128        6                       
+

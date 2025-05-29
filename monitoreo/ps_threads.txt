@@ -1,0 +1,7 @@
+lucas      21796   21419   21796  0    1 23:22 pts/4    00:00:00 ./passwordValidator
+lucas      21797   21796   21797  0    1 23:22 pts/4    00:00:00 ./passwordValidator
+lucas      21798   21796   21798  0    1 23:22 pts/4    00:00:00 ./passwordValidator
+lucas      21799   21796   21799  0    1 23:22 pts/4    00:00:00 ./passwordValidator
+lucas      21800   21796   21800  0    1 23:22 pts/4    00:00:00 ./passwordValidator
+lucas      21801   21796   21801  0    1 23:22 pts/4    00:00:00 ./passwordValidator
+lucas      22064   21888   22064  0    1 23:22 pts/5    00:00:00 grep --color=auto passwordValidator

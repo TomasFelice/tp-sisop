@@ -1,0 +1,1 @@
+lucas      23126  0.0  0.0   4092  1920 pts/5    S+   23:24   0:00 grep --color=auto passwordValidator

@@ -1,0 +1,5 @@
+
+------ Semaphore Arrays --------
+key        semid      owner      perms      nsems     
+0x0000162e 1          lucas      666        1         
+

@@ -1,0 +1,5 @@
+tcp        0      0 0.0.0.0:5000            0.0.0.0:*               LISTEN      27399/./server      
+tcp        0      0 127.0.0.1:5000          127.0.0.1:41572         ESTABLISHED 27399/./server      
+tcp        0      0 127.0.0.1:41572         127.0.0.1:5000          ESTABLISHED 27622/./client      
+tcp        0      0 127.0.0.1:5000          127.0.0.1:45216         ESTABLISHED 27399/./server      
+tcp        0      0 127.0.0.1:45216         127.0.0.1:5000          ESTABLISHED 27552/./client      

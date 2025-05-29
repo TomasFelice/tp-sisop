@@ -201,16 +201,21 @@ int main() {
     thread matchmaking_thread(matchmaker);
 
     while (server_running) {
-    connection_slots.acquire();
+    connection_slots.acquire();  // Limita la cantidad de conexiones activas
 
     sockaddr_in client_addr;
     socklen_t addr_len = sizeof(client_addr);
-
     int client_fd = accept(server_fd, (struct sockaddr*)&client_addr, &addr_len);
-    thread client_thread(handle_client, client_fd);
-    client_thread.detach();
+
+    if (client_fd < 0) {
+        perror("accept");
+        connection_slots.release();  // Libera el slot si no se pudo aceptar
+        continue;
     }
 
+    thread client_thread(handle_client, client_fd);
+    client_thread.detach();
+}
 
     matchmaking_thread.join();
     close(server_fd);
